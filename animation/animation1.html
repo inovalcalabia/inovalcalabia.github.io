@@ -23,7 +23,7 @@
  
   function loadImage(url, x, y) {
     const img = new Image();
-    img.src = url//'assets/asset1.png'; // Replace with your image URL
+    img.src = url//'assets1/asset1.png'; // Replace with your image URL
 
     img.onload = () => {
         ctx.drawImage(img, x-(img.width/2), y-(img.height/2)); // Draw the image at position (0, 0)
@@ -67,156 +67,128 @@
         };
         objs.push(this)
     }
-    var wc  = new sprite('assets/assets1.png',212.4478,  89.8225-50);
+    var wc  = new sprite('assets1/assets1.png',212.4478,  89.8225-100);
 
-    var f  = new sprite('assets/assets2.png',109.0209-50,  270.3073);
-    var i  = new sprite('assets/assets3.png',176.2914-50,  331.1265);
-    var i_dot  = new sprite('assets/assets4.png',176.7817,  222.4701-50);
-    var e  = new sprite('assets/assets5.png',292.4748-50,  331.346);
-    var l  = new sprite('assets/assets6.png',407.529-50,  271.335);
-    var d  = new sprite('assets/assets7.png',538.3377-50,  275.0222);
-    var q  = new sprite('assets/assets10.png',796.8731-50,  275.9635);
+    var f  = new sprite('assets1/assets2.png',109.0209-100,  270.3073);
+    var i  = new sprite('assets1/assets3.png',176.2914-100,  331.1265);
+    var i_dot  = new sprite('assets1/assets4.png',176.7817,  222.4701-100);
+    var e  = new sprite('assets1/assets5.png',292.4748-100,  331.346);
+    var l  = new sprite('assets1/assets6.png',407.529-100,  271.335);
+    var d  = new sprite('assets1/assets7.png',538.3377-100,  275.0222);
+    var q  = new sprite('assets1/assets10.png',796.8731-100,  275.9635);
 
-    var _t  = new sprite('assets/assets11.png',837.5351-50,  151.8919 )
-    var _m  = new sprite('assets/assets12.png',854.2279-50,  151.8919 )
+    var _t  = new sprite('assets1/assets11.png',837.5351-100,  151.8919 )
+    var _m  = new sprite('assets1/assets12.png',854.2279-100,  151.8919 )
 
-    var i_dot_2  = new sprite('assets/assets8.png',675.0637,  317.7451-50);
-    var yellow_i  = new sprite('assets/assets9.png',674.6726,  177.7249-50);
+    var i_dot_2  = new sprite('assets1/assets8.png',675.0637,  317.7451-100);
+    var yellow_i  = new sprite('assets1/assets9.png',674.6726,  177.7249-100);
 
 
-    var sm_s  = new sprite('assets/assets13.png',101.936-50,  457.9697 )
-    var sm_m  = new sprite('assets/assets14.png',142.2925-50,  464.9321 )
-    var sm_a  = new sprite('assets/assets15.png',182.6179-50,  465.4336 )
-    var sm_r  = new sprite('assets/assets16.png',210.8489-50,  465.2568 )
-    var sm_t  = new sprite('assets/assets17.png',230.6428-50,  459.5332 )
-    var sm_dot  = new sprite('assets/assets18.png',246.749+50,  476.1729 )
+    var sm_s  = new sprite('assets1/assets13.png',101.936-100,  457.9697 )
+    var sm_m  = new sprite('assets1/assets14.png',142.2925-100,  464.9321 )
+    var sm_a  = new sprite('assets1/assets15.png',182.6179-100,  465.4336 )
+    var sm_r  = new sprite('assets1/assets16.png',210.8489-100,  465.2568 )
+    var sm_t  = new sprite('assets1/assets17.png',230.6428-100,  459.5332 )
+    var sm_dot  = new sprite('assets1/assets18.png',246.749+50,  476.1729 )
 
-    var sm_s_2  = new sprite('assets/assets19.png',287.4653-50,  457.9697 )
-    var sm_e_2  = new sprite('assets/assets20.png',321.1248-50,  465.3159 )
-    var sm_a_2  = new sprite('assets/assets21.png',354.8123-50,  465.4336 )
-    var sm_m_2  = new sprite('assets/assets22.png',396.4375-50,  464.9321 )
-    var sm_l_2  = new sprite('assets/assets23.png',428.738-50,  457.0552 )
-    var sm_ee_2  = new sprite('assets/assets24.png',454.4041-50,  465.3159 )
-    var sm_ss_2  = new sprite('assets/assets25.png',485.6724-50,  465.3154 )
-    var sm_sss_2  = new sprite('assets/assets26.png',511.2192-50,  465.3154 )
-    var sm_dot_2  = new sprite('assets/assets27.png',530.6294+50,  476.1729 )
+    var sm_s_2  = new sprite('assets1/assets19.png',287.4653-100,  457.9697 )
+    var sm_e_2  = new sprite('assets1/assets20.png',321.1248-100,  465.3159 )
+    var sm_a_2  = new sprite('assets1/assets21.png',354.8123-100,  465.4336 )
+    var sm_m_2  = new sprite('assets1/assets22.png',396.4375-100,  464.9321 )
+    var sm_l_2  = new sprite('assets1/assets23.png',428.738-100,  457.0552 )
+    var sm_ee_2  = new sprite('assets1/assets24.png',454.4041-100,  465.3159 )
+    var sm_ss_2  = new sprite('assets1/assets25.png',485.6724-100,  465.3154 )
+    var sm_sss_2  = new sprite('assets1/assets26.png',511.2192-100,  465.3154 )
+    var sm_dot_2  = new sprite('assets1/assets27.png',530.6294+50,  476.1729 )
 
     //“Strategic”
-    var sm_s_3  = new sprite('assets/assets28.png',564.939-50,  457.9697 )
-    var sm_t_3  = new sprite('assets/assets29.png',589.4526-50,  459.5332 )
-    var sm_r_3  = new sprite('assets/assets30.png',610.4854-50,  465.2568 )
-    var sm_a_3  = new sprite('assets/assets31.png',634.5864-50,  465.4336 )
-    var sm_tt_3  = new sprite('assets/assets32.png',660.3696-50,  459.5332 )
-    var sm_e_3  = new sprite('assets/assets33.png',687.5688-50,  465.3159 )
-    var sm_g_3  = new sprite('assets/assets34.png',724.4131-50,  471.0391 )
-    var sm_i_3  = new sprite('assets/assets35.png',751.2861-50,  459.5923 )
-    var sm_c_3  = new sprite('assets/assets36.png',773.0571-50,  465.3154 )
-    var sm_dot_3  = new sprite('assets/assets37.png',795.1226+50,  476.1729 )
+    var sm_s_3  = new sprite('assets1/assets28.png',564.939-100,  457.9697 )
+    var sm_t_3  = new sprite('assets1/assets29.png',589.4526-100,  459.5332 )
+    var sm_r_3  = new sprite('assets1/assets30.png',610.4854-100,  465.2568 )
+    var sm_a_3  = new sprite('assets1/assets31.png',634.5864-100,  465.4336 )
+    var sm_tt_3  = new sprite('assets1/assets32.png',660.3696-100,  459.5332 )
+    var sm_e_3  = new sprite('assets1/assets33.png',687.5688-100,  465.3159 )
+    var sm_g_3  = new sprite('assets1/assets34.png',724.4131-100,  471.0391 )
+    var sm_i_3  = new sprite('assets1/assets35.png',751.2861-100,  459.5923 )
+    var sm_c_3  = new sprite('assets1/assets36.png',773.0571-100,  465.3154 )
+    var sm_dot_3  = new sprite('assets1/assets37.png',795.1226+50,  476.1729 )
     
     
     var list = [wc,f,i,i_dot,e,l,d,q,i_dot_2,yellow_i, _t,_m, sm_s,sm_m,sm_a,sm_r,sm_t,sm_dot     , sm_s_2, sm_e_2, sm_a_2, sm_m_2, sm_l_2, sm_ee_2, sm_ss_2, sm_sss_2, sm_dot_2
         ,  sm_s_3, sm_t_3, sm_r_3, sm_a_3, sm_tt_3, sm_e_3, sm_g_3,sm_i_3, sm_c_3, sm_dot_3
     ];
-    for (var b = 0; b < list.length; b +=1) {
-        list[b].alpha = 0;
+    doAnim();
+      setInterval(()=>{
+        doAnim();
+      }, 10000)
+   
+    function doAnim() {
+      var xPos = [212.4478, 9.020899999999997, 76.29140000000001, 176.7817, 192.47480000000002, 307.529, 438.33770000000004, 696.8731, 675.0637, 674.6726, 737.5351, 754.2279, 1.936000000000007, 42.29249999999999, 82.61789999999999, 110.84889999999999, 130.6428, 296.749, 187.4653, 221.1248, 254.8123, 296.4375, 328.738, 354.4041, 385.6724, 411.2192, 580.6294, 464.93899999999996, 489.45259999999996, 510.4854, 534.5864, 560.3696, 587.5688, 624.4131, 651.2861, 673.0571, 845.1226];
+      var yPos = [-10.177499999999995, 270.3073, 331.1265, 122.4701, 331.346, 271.335, 275.0222, 275.9635, 217.74509999999998, 77.72489999999999, 151.8919, 151.8919, 457.9697, 464.9321, 465.4336, 465.2568, 459.5332, 476.1729, 457.9697, 465.3159, 465.4336, 464.9321, 457.0552, 465.3159, 465.3154, 465.3154, 476.1729, 457.9697, 459.5332, 465.2568, 465.4336, 459.5332, 465.3159, 471.0391, 459.5923, 465.3154, 476.1729]
+        for (var b = 0; b < list.length; b +=1) {
+          list[b].x = xPos[b]
+          list[b].y = yPos[b]
+          list[b].scaleY = 1;
+          TweenMax.killTweensOf(list[b])
+          list[b].alpha = 0;
+      }
+      TweenMax.to(f, 0.3, {alpha:1,ease:"sine.in", x: 109.02, y: 270.3073})
+      TweenMax.to(i, 0.3, {alpha:1,ease:"sine.in", x: 176.2914, y: 331.1265, delay: 0.3*1})
+      TweenMax.to(e, 0.3, {alpha:1,ease:"sine.in", x: 292.4748, y: 331.346, delay: 0.3*2})
+      TweenMax.to(l, 0.3, {alpha:1,ease:"sine.in", x: 407.529, y: 271.335, delay: 0.3*3})
+      TweenMax.to(d, 0.3, {alpha:1,ease:"sine.in", x: 538.3377, y: 275.0222, delay: 0.3*4})
+      TweenMax.to(q, 0.3, {alpha:1,ease:"sine.in", x: 796.8731, y: 275.9635, delay: 0.3*5})
+      TweenMax.to(_t, 0.3, {alpha:1,ease:"sine.in", x: 837.5351, y: 151.8919, delay: 0.3*5})
+      TweenMax.to(_m, 0.3, {alpha:1,ease:"sine.in", x: 854.2279, y: 151.8919, delay: 0.3*5})
+      TweenMax.to(i_dot, 0.3, {alpha:1,ease:"sine.in", x: 176.7817, y: 222.4701, delay: 0.3*6})
+      TweenMax.to(i_dot_2, 0.3, {alpha:1,ease:"sine.in", x: 675.0637, y: 317.7451, delay: 0.3*6})
+      TweenMax.to(yellow_i, 0.3, {alpha:1,ease:"sine.in", x: 674.6726, y: 177.7249, delay: 0.3*6})
+
+      /* setTimeout(()=>{
+          setInterval(()=>{
+            
+          }, 5000)
+      }, 5000) */
+
+      TweenMax.to(yellow_i, .4, {scaleY:-1,  yoyo:true, repeat:-1, delay:5, repeatDelay: 5})
+      //TweenMax.to(yellow_i, .4, {scaleX:1.1,  yoyo:true, repeat:-1, delay: 5, repeatDelay: 5})
+
+      TweenMax.to(wc, 0.7, {alpha:1,ease:"sine.in", x: 212.4478, y: 89.8225, delay: 0.3*7})
+
+      TweenMax.to(sm_s, 0.4, {alpha:1,ease:"sine.in", x: 101.936, y: 457.9697, delay: 0.3*9})
+      TweenMax.to(sm_m, 0.4, {alpha:1,ease:"sine.in", x: 142.2925, y: 464.9321, delay: 0.3*9})
+      TweenMax.to(sm_a, 0.4, {alpha:1,ease:"sine.in", x: 182.6179, y: 465.4336, delay: 0.3*9})
+      TweenMax.to(sm_r, 0.4, {alpha:1,ease:"sine.in", x: 210.8489, y: 465.2568, delay: 0.3*9})
+      TweenMax.to(sm_t, 0.4, {alpha:1,ease:"sine.in", x: 230.6428, y: 459.5332, delay: 0.3*9})
+      TweenMax.to(sm_dot, 0.3, {alpha:1,ease:"sine.in", x: 246.749, y: 476.1729, delay: (0.3*9) + 0.25})
+
+
+      TweenMax.to(sm_s_2, 0.4, {alpha:1,ease:"sine.in", x: 287.4653, y: 457.9697, delay: 0.3*11.5})
+      TweenMax.to(sm_e_2, 0.4, {alpha:1,ease:"sine.in", x: 321.1248, y: 465.3159, delay: 0.3*11.5})
+      TweenMax.to(sm_a_2, 0.4, {alpha:1,ease:"sine.in", x: 354.8123, y: 465.4336, delay: 0.3*11.5})
+      TweenMax.to(sm_m_2, 0.4, {alpha:1,ease:"sine.in", x: 396.4375, y: 464.9321, delay: 0.3*11.5})
+      TweenMax.to(sm_l_2, 0.4, {alpha:1,ease:"sine.in", x: 428.738, y: 457.0552, delay: 0.3*11.5})
+      TweenMax.to(sm_ee_2, 0.4, {alpha:1,ease:"sine.in", x: 454.4041, y: 465.3159, delay: 0.3*11.5})
+      TweenMax.to(sm_ss_2, 0.4, {alpha:1,ease:"sine.in", x: 485.6724, y: 465.3154, delay: 0.3*11.5})
+      TweenMax.to(sm_sss_2, 0.4, {alpha:1,ease:"sine.in", x: 511.2192, y: 465.3154, delay: 0.3*11.5})
+      TweenMax.to(sm_dot_2, 0.3, {alpha:1,ease:"sine.in", x: 530.6294, y: 476.1729, delay: (0.3*11.5) + 0.25})
+
+
+
+
+      TweenMax.to(sm_s_3, 0.4, {alpha:1,ease:"sine.in", x: 564.939,  y:457.9697, delay: 0.3*13.5})
+      TweenMax.to(sm_t_3, 0.4, {alpha:1,ease:"sine.in", x: 589.4526,  y:459.5332, delay: 0.3*13.5})
+      TweenMax.to(sm_r_3, 0.4, {alpha:1,ease:"sine.in", x: 610.4854,  y:465.2568, delay: 0.3*13.5})
+      TweenMax.to(sm_a_3, 0.4, {alpha:1,ease:"sine.in", x: 634.5864,  y:465.4336, delay: 0.3*13.5})
+      TweenMax.to(sm_tt_3, 0.4, {alpha:1,ease:"sine.in", x: 660.3696,  y:459.5332, delay: 0.3*13.5})
+      TweenMax.to(sm_e_3, 0.4, {alpha:1,ease:"sine.in", x: 687.5688,  y:465.3159, delay: 0.3*13.5})
+      TweenMax.to(sm_g_3, 0.4, {alpha:1,ease:"sine.in", x: 724.4131,  y:471.0391, delay: 0.3*13.5})
+      TweenMax.to(sm_i_3, 0.4, {alpha:1,ease:"sine.in", x: 751.2861,  y:459.5923, delay: 0.3*13.5})
+      TweenMax.to(sm_c_3, 0.4, {alpha:1,ease:"sine.in", x: 773.0571,  y:465.3154, delay: 0.3*13.5})
+      TweenMax.to(sm_dot_3, 0.3, {alpha:1,ease:"sine.in", x: 795.1226,  y:476.1729, delay: (0.3*13.5) + 0.25})
+
     }
-    TweenMax.to(f, 0.3, {alpha:1, x: 109.02, y: 270.3073})
-    TweenMax.to(i, 0.3, {alpha:1, x: 176.2914, y: 331.1265, delay: 0.3*1})
-    TweenMax.to(e, 0.3, {alpha:1, x: 292.4748, y: 331.346, delay: 0.3*2})
-    TweenMax.to(l, 0.3, {alpha:1, x: 407.529, y: 271.335, delay: 0.3*3})
-    TweenMax.to(d, 0.3, {alpha:1, x: 538.3377, y: 275.0222, delay: 0.3*4})
-    TweenMax.to(q, 0.3, {alpha:1, x: 796.8731, y: 275.9635, delay: 0.3*5})
-    TweenMax.to(_t, 0.3, {alpha:1, x: 837.5351, y: 151.8919, delay: 0.3*5})
-    TweenMax.to(_m, 0.3, {alpha:1, x: 854.2279, y: 151.8919, delay: 0.3*5})
-    TweenMax.to(i_dot, 0.3, {alpha:1, x: 176.7817, y: 222.4701, delay: 0.3*6})
-    TweenMax.to(i_dot_2, 0.3, {alpha:1, x: 675.0637, y: 317.7451, delay: 0.3*6})
-    TweenMax.to(yellow_i, 0.3, {alpha:1, x: 674.6726, y: 177.7249, delay: 0.3*6})
 
-    setTimeout(()=>{
-        setInterval(()=>{
-            TweenMax.to(yellow_i, .4, {scaleY:-1,  yoyo:true, repeat:1})
-            TweenMax.to(yellow_i, .4, {scaleX:1.1,  yoyo:true, repeat:1})
-        }, 5000)
-    }, 5000)
-
-    TweenMax.to(wc, 0.3, {alpha:1, x: 212.4478, y: 89.8225, delay: 0.3*7})
-
-    TweenMax.to(sm_s, 0.4, {alpha:1, x: 101.936, y: 457.9697, delay: 0.3*8})
-    TweenMax.to(sm_m, 0.4, {alpha:1, x: 142.2925, y: 464.9321, delay: 0.3*8})
-    TweenMax.to(sm_a, 0.4, {alpha:1, x: 182.6179, y: 465.4336, delay: 0.3*8})
-    TweenMax.to(sm_r, 0.4, {alpha:1, x: 210.8489, y: 465.2568, delay: 0.3*8})
-    TweenMax.to(sm_t, 0.4, {alpha:1, x: 230.6428, y: 459.5332, delay: 0.3*8})
-    TweenMax.to(sm_dot, 0.3, {alpha:1, x: 246.749, y: 476.1729, delay: (0.3*8) + 0.25})
-
-
-    TweenMax.to(sm_s_2, 0.4, {alpha:1, x: 287.4653, y: 457.9697, delay: 0.3*10})
-    TweenMax.to(sm_e_2, 0.4, {alpha:1, x: 321.1248, y: 465.3159, delay: 0.3*10})
-    TweenMax.to(sm_a_2, 0.4, {alpha:1, x: 354.8123, y: 465.4336, delay: 0.3*10})
-    TweenMax.to(sm_m_2, 0.4, {alpha:1, x: 396.4375, y: 464.9321, delay: 0.3*10})
-    TweenMax.to(sm_l_2, 0.4, {alpha:1, x: 428.738, y: 457.0552, delay: 0.3*10})
-    TweenMax.to(sm_ee_2, 0.4, {alpha:1, x: 454.4041, y: 465.3159, delay: 0.3*10})
-    TweenMax.to(sm_ss_2, 0.4, {alpha:1, x: 485.6724, y: 465.3154, delay: 0.3*10})
-    TweenMax.to(sm_sss_2, 0.4, {alpha:1, x: 511.2192, y: 465.3154, delay: 0.3*10})
-    TweenMax.to(sm_dot_2, 0.3, {alpha:1, x: 530.6294, y: 476.1729, delay: (0.3*10) + 0.25})
-
-
-
-
-    TweenMax.to(sm_s_3, 0.4, {alpha:1, x: 564.939,  y:457.9697, delay: 0.3*12})
-    TweenMax.to(sm_t_3, 0.4, {alpha:1, x: 589.4526,  y:459.5332, delay: 0.3*12})
-    TweenMax.to(sm_r_3, 0.4, {alpha:1, x: 610.4854,  y:465.2568, delay: 0.3*12})
-    TweenMax.to(sm_a_3, 0.4, {alpha:1, x: 634.5864,  y:465.4336, delay: 0.3*12})
-    TweenMax.to(sm_tt_3, 0.4, {alpha:1, x: 660.3696,  y:459.5332, delay: 0.3*12})
-    TweenMax.to(sm_e_3, 0.4, {alpha:1, x: 687.5688,  y:465.3159, delay: 0.3*12})
-    TweenMax.to(sm_g_3, 0.4, {alpha:1, x: 724.4131,  y:471.0391, delay: 0.3*12})
-    TweenMax.to(sm_i_3, 0.4, {alpha:1, x: 751.2861,  y:459.5923, delay: 0.3*12})
-    TweenMax.to(sm_c_3, 0.4, {alpha:1, x: 773.0571,  y:465.3154, delay: 0.3*12})
-    TweenMax.to(sm_dot_3, 0.3, {alpha:1, x: 795.1226,  y:476.1729, delay: (0.3*12) + 0.25})
-
-
-
- /* loadImage('assets/assets1.png',212.4478,  89.8225)
-  loadImage('assets/assets2.png',109.0209,  270.3073)
-  loadImage('assets/assets3.png',176.2914,  331.1265)
-  loadImage('assets/assets4.png',176.7817,  222.4701)
-  loadImage('assets/assets5.png',292.4748,  331.346)
-  loadImage('assets/assets6.png',407.529,  271.335)
-  loadImage('assets/assets7.png',538.3377,  275.0222 )
-  loadImage('assets/assets8.png',675.0637,  317.7451 )
-  loadImage('assets/assets9.png',674.6726,  177.7249 )
-  loadImage('assets/assets10.png',796.8731,  275.9635 )
-  loadImage('assets/assets11.png',837.5351,  151.8919 )
-  loadImage('assets/assets12.png',854.2279,  151.8919 )
-
-  loadImage('assets/assets13.png',101.936,  457.9697 )
-  loadImage('assets/assets14.png',142.2925,  464.9321 )
-  loadImage('assets/assets15.png',182.6179,  465.4336 )
-  loadImage('assets/assets16.png',210.8489,  465.2568 )
-  loadImage('assets/assets17.png',230.6428,  459.5332 )
-  loadImage('assets/assets18.png',246.749,  476.1729 )
-
-  loadImage('assets/assets19.png',287.4653,  457.9697 )
-  loadImage('assets/assets20.png',321.1248,  465.3159 )
-  loadImage('assets/assets21.png',354.8123,  465.4336 )
-  loadImage('assets/assets22.png',396.4375,  464.9321 )
-  loadImage('assets/assets23.png',428.738,  457.0552 )
-  loadImage('assets/assets24.png',454.4041,  465.3159 )
-  loadImage('assets/assets25.png',485.6724,  465.3154 )
-  loadImage('assets/assets26.png',511.2192,  465.3154 )
-  loadImage('assets/assets27.png',530.6294,  476.1729 )
-
-  loadImage('assets/assets28.png',564.939,  457.9697 )
-  loadImage('assets/assets29.png',589.4526,  459.5332 )
-  loadImage('assets/assets30.png',610.4854,  465.2568 )
-  loadImage('assets/assets31.png',634.5864,  465.4336 )
-  loadImage('assets/assets32.png',660.3696,  459.5332 )
-  loadImage('assets/assets33.png',687.5688,  465.3159 )
-  loadImage('assets/assets34.png',724.4131,  471.0391 )
-  loadImage('assets/assets35.png',751.2861,  459.5923 )
-  loadImage('assets/assets36.png',773.0571,  465.3154 )
-  loadImage('assets/assets37.png',795.1226,  476.1729 )*/
- /*  n.alpha = 0
-  TweenMax.to(n, 5, {x: 300, alpha: 1}) */
 
   function update() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
