@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Load Image on Canvas</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <style>
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="700" height="730"></canvas>
+
+<script>
+  const canvas = document.getElementById('myCanvas');
+  const ctx = canvas.getContext('2d');
+
+  ctx.fillStyle = "#0c1a3b";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  var objs = [];
+  
+  function sprite(url, _x, _y) {
+      this.x = _x || 0;
+      this.y = _y || 0;
+      const img = new Image();
+      this.alpha = 1;
+      this.scaleX = 1;
+      this.scaleY = 1;
+      this.rotation = 0
+      img.src = url;
+      this.isLoaded = false;
+      img.onload = () => {
+          this.isLoaded = true;
+          ctx.drawImage(img, this.x-(img.width/2), this.y-(img.height/2)); // Draw the image at position (0, 0)
+      };
+      this.update =  () => {
+          ctx.save();
+          if (this.isLoaded) {
+              ctx.globalAlpha = this.alpha
+
+              const centerX = img.width / 2.0;
+              const centerY = img.height / 2.0;
+
+              ctx.translate(this.x, this.y );
+              ctx.rotate(this.rotation*Math.PI/180);
+              ctx.scale(this.scaleX, this.scaleY);
+              ctx.drawImage( img, -centerX, -centerY );
+             // ctx.translate( this.x-(img.width/2), this.y-(img.height/2) );
+              //ctx.drawImage(img, this.x-(img.width/2), this.y-(img.height/2), img.width * this.scaleX, img.height * this.scaleY);
+          }
+          ctx.restore();
+      };
+      objs.push(this)
+  }
+
+  var arrow  = new sprite('assets2/arrow.png',340.6569,  377.9434);
+  var border  = new sprite('assets2/border.png',344.4279,  377.5793);
+  var line  = new sprite('assets2/line.png',344.0898,  378.2132);
+  var icon1  = new sprite('assets2/icon1.png',344.2958,  377.7091);
+
+  setInterval(()=>{
+            TweenMax.to(icon1, .4, {scaleY:1.1,  yoyo:true, repeat:1})
+            TweenMax.to(icon1, .4, {scaleX:-1,  yoyo:true, repeat:1})
+        }, 2000)
+
+  function update() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "#0c1a3b";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    arrow.rotation += 0.5;
+    line.rotation -= 0.1;
+    for (var i = 0; i < objs.length; i += 1) {
+        objs[i].update();
+      
+    }
+    window.requestAnimationFrame(this.update);
+  }
+  this.update();
+
+</script>
+
+</body>
+</html>
